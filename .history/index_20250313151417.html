@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Blog Preview Card</title>
+  <style>
+    body {
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      background-color: white;
+      width: 90%;
+      max-width: 350px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: black solid 1px;
+      box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5), /* Right shadow */
+      0 8px 8px -8px rgba(0, 0, 0, 0.5); 
+    }
+    .card img {
+      width: 300px;
+      border-radius: 20px;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .tag {
+      background-color: hsl(47, 88%, 63%);
+      border: none;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .date {
+      color: gray;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+    p {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .profile p {
+      margin: 0;
+      font-weight: bold;
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">OKULLO DAVID</a>.
+  </div>
+  <div class="card">
+    <img src="./assets/images/illustration-article.svg" alt="Article Illustration">
+    <div class="card-content">
+      <button class="tag">Learning</button>
+      <div class="date">Published 21 Dec 2023</div>
+      <h3>HTML & CSS Foundations</h3>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="profile">
+        <img src="./assets/images/image-avatar.webp" alt="Greg Hooper">
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
